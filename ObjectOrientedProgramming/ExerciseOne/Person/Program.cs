@@ -1,4 +1,5 @@
 ﻿using System;
+using Classes;
 
 namespace Person
 {
@@ -6,7 +7,8 @@ namespace Person
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var student = new Student("Stephen", 22);
+            Console.WriteLine($"Hi {student.GetName()}, you are {student.GetAge()}");
         }
     }
 }
